@@ -1,0 +1,8 @@
+
+
+REST API
+GET /users => 모든 사용자 정보 호출
+POST /users => 사용자 정보 추가
+GET /users/(ID) => 특정 사용자 조회
+PUT /users/(ID) => 사용자 정보 수정
+DELETE /usres/(ID) => 사용자 정보 삭제

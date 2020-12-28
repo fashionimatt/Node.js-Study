@@ -1,6 +1,7 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
 const logger = require('morgan');
+// body-parser는 express의 내장 모듈이므로 install 할 필요가 없다.
 const bodyParser = require('body-parser');
 
 const admin = require('./routes/admin');
