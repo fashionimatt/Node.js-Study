@@ -19,6 +19,15 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// 정적 폴더 세팅 : 첫번째 변수가 url, 두번째 인수가 정적 자료를 가져올 폴더명
+app.use( '/uploads', express.static('uploads') );
+
+// 전역 변수 설정
+app.use( (req, res, next) => {
+    app.locals.isLogin = false;
+    next();
+});
+
 app.get('/', (req,res) => {
     res.send('express start');
 });
