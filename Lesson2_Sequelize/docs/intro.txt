@@ -1,0 +1,5 @@
+Sequelize란?
+ORM(Object-Relational Mapping) Nodejs로 DB를 제어할 수 있게 해줌
+
+Sequelize를 쓰는 이유?
+Models 설정을 통해 어플리케이션의 데이터베이스 구조를 파악하기 쉬움
